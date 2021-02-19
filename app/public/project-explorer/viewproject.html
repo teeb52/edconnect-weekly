@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <title>Project Explorer</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    .main-form {
+      width: 1200px;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand navbar-dark bg-primary">
+    <a href="index.html" class="navbar-brand">Project Explorer</a>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" name="searchForm" placeholder="Search Projects"
+        aria-label="Search Projects">
+      <button class="btn btn-outline-light my-sn-0" name="navButton" type="submit">Search</button>
+    </form>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="search.html" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="createproject.html" class="nav-link">Submit</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="register.html" class="nav-link">Sign up</a>
+        </li>
+        <li class="nav-item">
+          <a href="login.html" class="nav-link">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container w-100 mx-auto my-4 p-0">
+    <h3 class="profile-heading">Project 1</h3>
+    <div class="row p-4 ml-auto bg-light">
+      <div class="col-3">Created By<br>Tola Adefarasin</div>
+      <div class="col-3">Date Created<br>15/02/2021</div>
+      <div class="col-3">Last Updated<br>15/02/2021</div>
+      <div class="col-3 d-flex justify-content-end">
+        <button type="submit" class="btn btn-primary" name="editProjectButton">Edit Project</button>
+      </div>
+    </div>
+
+    <form class="main-form pr-5 mt-4">
+      <div class="row">
+        <div class="col">
+          <h6>Project Abstract</h6>
+          <hr>
+          <p>Fusce at sollicitudin velit. Curabitur sit amet massa nec odio volutpat scelerisque. Morbi lectus dolor,
+            condimentum ut ante id, suscipit malesuada risus.
+            Vivamus ornare tellus sit amet risus pharetra pharetra. Fusce rhoncus eget quam sit amet ullamcorper. Etiam
+            maximus quam ut lacinia consequat.
+            Sed ultricies aliquet leo molestie consectetur. Nullam egestas, quam id condimentum consectetur, nunc purus
+            lobortis lectus, quis auctor enim velit ac ligula.
+            Fusce non dolor sem. Quisque eu interdum nunc. Phasellus nec aliquam arcu, vel suscipit metus.</p>
+        </div>
+        <div class="col">
+          <h6>Project Details</h6>
+          <hr>
+          <div class="card">
+            <div class="card-header">
+              <h6>Author(s)</h6>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Tola Adefarasin</p>
+            </div>
+            <div class="card-footer" style="color:rgb(11, 106, 248)">
+              #web
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label class="form-label" for="comments">Comments</label>
+            <textarea class="form-control" type="text" id="comments" rows="5" placeholder="Leave a comment"
+              name="comments"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" name="submitButton">Submit</button>
+          <hr>
+          <div class="text-center">
+            <p>No comments added yet</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <h6>Project files</h6>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-center">No files uploaded yet</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <footer class=" mx-5 p-2 d-flex justify-content-end bg-light">
+    <p>Project Explorer 2020 &copy; - <b>Edconnect</b></p>
+  </footer>
+</body>
+
+</html>

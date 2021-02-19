@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Project Explorer</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand navbar-dark bg-primary">
+        <a href="index.html" class="navbar-brand">Project Explorer</a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" name="searchForm" placeholder="Search Projects"
+                aria-label="Search Projects">
+            <button class="btn btn-outline-light my-sn-0" type="submit" name="navButton">Search</button>
+        </form>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="search.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="createproject.html" class="nav-link">Submit</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="register.html" class="nav-link">Sign up</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="mx-auto w-75 p-5">
+        <h1 class="form-text">Signup</h1><br>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="registerInputFname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="registerInputFname" name="registerInputFname" placeholder="First name"
+                        aria-label="First name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="registerInputLname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="registerInputLname" name="registerInputLname" placeholder="Last name"
+                        aria-label="Last name">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="registerEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="registerEmail" name="registerEmail" placeholder="Your Email address"
+                        aria-label="Your Email address">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="registerPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="registerPassword" name="registerPassword" placeholder="Your Password"
+                        aria-label="Your Password">
+                </div>
+         </div>
+          <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="programSelect" class="form-label">Program</label>
+                    <select class="form-control" id="programSelect" name="programSelect" >
+                        <option selected>Choose...</option>
+                        <option value="computer_science">Computer Science</option>
+                        <option value="computer_information_systems">Computer Information Systems</option>
+                        <option value="computer_technology">Computer Technology</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="registerMatricNumber" class="form-label">Matric Number:</label>
+                    <input type="text" class="form-control" id="registerMatricNumber" name="registerMatricNumber" placeholder="e.g 06/2021"
+                        aria-label="e.g 06/2021">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="graduationYearSelect" class="form-label">Graduation Year</label>
+                    <select class="form-control" id="graduationYearSelect" name="graduationYearSelect">
+                        <option selected>Choose...</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" name="signUpButton">Sign Up</button>
+        </form>
+
+    </div>
+    <footer class=" mx-5 p-2 d-flex justify-content-end bg-light">
+        <p>Project Explorer 2020 &copy; - <b>Edconnect</b></p>
+      </footer>
+</body>
+
+</html>
