@@ -36,30 +36,29 @@
     </nav>
     <div class="jumbotron bg-white mx-4 my-4 pb-0 pt-2">
         <h3 class="form-text">Project 1</h3>
-        <div>
+        <form>
             <div class="form-row bg-light ml-0 p-3 align-items-center">
-                <div class="col-8 my-1">
-                    <label class="sr-only" for="inlineFormSearchTerm">Search bar</label>
-                    <input type="search" class="form-control form-control-lg" id="inlineFormSearchTerm"
+                <div class="form-group col-8 my-1">
+                    <label class="sr-only form-label" for="formSearchTerm">Search bar</label>
+                    <input type="search" class="form-control form-control-lg" id="formSearchTerm"
                         name="searchTerm" placeholder="Search project names, authors, abstracts, tags">
                 </div>
-                <div class="col-3 my-1">
-                    <label class="sr-only form-label" for="inlineFormsearchName">Search by</label>
+                <div class="form-group col-3 my-1">
+                    <label class="sr-only form-label" for="formSearchName">Search by</label>
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <div class="input-group-text">Search by</div>
                         </div>
-                        <select type="text" class="form-control" id="inlineFormsearchName" name="searchTerm"
-                            placeholder="Username">
+                        <select type="text" class="form-control form-control-lg" id="formSearchName" name="searchTerm">
                             <option selected>Name</option>
                         </select>
                     </div>
                 </div>
-                <div class="col-auto my-1">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="form-group col-auto my-1">
+                    <button type="submit" class="btn btn-primary" name="searchButton">Submit</button>
                 </div>
             </div>
-        </div>
+        </form>
         <div class="mt-5">
             <h5>All Projects <small text-muted>(0 results)</h5>
         </div>
