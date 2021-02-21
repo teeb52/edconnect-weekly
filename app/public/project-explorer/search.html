@@ -34,65 +34,68 @@
             </ul>
         </div>
     </nav>
-    <div class="jumbotron bg-white mx-5 my-4 pt-2">
+    <div class="jumbotron bg-white mx-4 my-4 pb-0 pt-2">
         <h3 class="form-text">Project 1</h3>
-        <form class="row bg-light p-3">
-            <div class="col-7">
-                <div class="form-group">
-                    <input class="form-control form-control-lg" type="search" id="searchTerm" placeholder="Search"
-                        aria-label="searchTerm" placeholder="Search project names, authors, abstracts, tags"
-                        name="searchTerm">
+        <div>
+            <div class="form-row bg-light ml-0 p-3 align-items-center">
+                <div class="col-8 my-1">
+                    <label class="sr-only" for="inlineFormSearchTerm">Search bar</label>
+                    <input type="search" class="form-control form-control-lg" id="inlineFormSearchTerm"
+                        name="searchTerm" placeholder="Search project names, authors, abstracts, tags">
+                </div>
+                <div class="col-3 my-1">
+                    <label class="sr-only form-label" for="inlineFormsearchName">Search by</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Search by</div>
+                        </div>
+                        <select type="text" class="form-control" id="inlineFormsearchName" name="searchTerm"
+                            placeholder="Username">
+                            <option selected>Name</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-auto my-1">
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="input-group">
-                    <div class="input-group-append">
-                        <span class="input-group-text" name="searchTerm">Search By</span>
+        </div>
+        <div class="mt-5">
+            <h5>All Projects <small text-muted>(0 results)</h5>
+        </div>
+    </div>
+
+    <div class="jumbotron d-flex flex-wrap justify-content-between bg-white mx-4 my-4 pt-1">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod
+                            tempor
+                            incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="card-link">#html</a>
+                        <a href="#" class="card-link">#css</a>
+                        <a href="#" class="card-link">#javascript</a>
                     </div>
-                    <select type="text" class="form-control form-control-lg" id="username" name="searchTerm"
-                        placeholder="Username" aria-label="Username" aria-describedby="Username">
-                        <option selected>Name</option>
-                    </select>
                 </div>
             </div>
             <div class="col">
-                <button type="button" class="btn btn-lg btn-primary" name="submitButton">Submit</button>
-            </div>
-        </form>
-    </div>
-    
-    <div class="container pb-3">
-        <h5>All Projects <small text-muted>(0 results)</h5>
-        <div class="row">
-            <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Project Title</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod
-                                tempor
-                                incididunt ut labore et dolore magna aliqua.</p>
-                            <a href="#" class="card-link">#html</a>
-                            <a href="#" class="card-link">#css</a>
-                            <a href="#" class="card-link">#javascript</a>
-                        </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod
+                            tempor
+                            incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="card-link">#html</a>
+                        <a href="#" class="card-link">#css</a>
+                        <a href="#" class="card-link">#javascript</a>
                     </div>
-            </div>
-            <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Project Title</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod
-                                tempor
-                                incididunt ut labore et dolore magna aliqua.</p>
-                            <a href="#" class="card-link">#html</a>
-                            <a href="#" class="card-link">#css</a>
-                            <a href="#" class="card-link">#javascript</a>
-                        </div>
-                    </div>
+                </div>
             </div>
         </div>
     </div>
