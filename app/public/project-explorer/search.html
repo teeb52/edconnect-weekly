@@ -13,7 +13,7 @@
         <form class="form-inline">
             <input class="form-control mr-sm-2" type="search" name="searchForm" placeholder="Search Projects"
                 aria-label="Search Projects">
-                <button class="btn btn-outline-light my-sn-0" type="submit" name="navButton">Search</button>
+            <button class="btn btn-outline-light my-sn-0" type="submit" name="navButton">Search</button>
         </form>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav">
@@ -37,27 +37,35 @@
 
     <div class="jumbotron bg-white mx-4 my-4 pb-0 pt-2">
         <h3 class="form-text">Project 1</h3>
-        <div class="bg-light p-3">
-            <form> 
-              <div class="form-row ">
-                <div class=" form-group col-8">
-                  <input type="text" name='searchTerm' class="form-control form-control-lg " placeholder="Search project name, authors, abstract, tags">
+        <div class="bg-light ml-0 p-3">
+            <form name="searchForm">
+                <div class="form-row  align-items-center">
+                    <div class="form-group col-8 my-1">
+                        <label class="sr-only form-label" for="formSearchBox">Search bar</label>
+                        <input type="text" name="searchTerm" class="form-control form-control-lg" id="formSearchBox"
+                            placeholder="Search project names, authors, abstracts, tags">
+                    </div>
+                    <div class="form-group my-1">
+                        <label class="sr-only form-label" for="formSearchType">Search by</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">Search by</div>
+                            </div>
+                            <select type="text" class="form-control form-control-lg" id="formSearchType"
+                                name="searchType">
+                                <option selected>Name</option>
+                                <option>Author</option>
+                                <option>Abstract</option>
+                                <option>Tag</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group col my-1">
+                        <button type="submit" class=" btn btn-lg btn-primary" name="searchButton">Submit</button>
+                    </div>
                 </div>
-                <div class="form-group " >
-                  <label class="btn btn-light"> Search By</label>
-                </div>
-                <div class="form-group">
-                    <select name="searchType">
-                      <option value="Name">Name</option>
-                      <option value="Abstract">Abstract</option>
-                      <option value="Authors">Authors</option>
-                      <option value="Tags">Tags</option>
-                    </select>
-                    <button type="submit" class="btn btn-lg btn-primary">Submit</button>
-                </div>
-              </div>
             </form>
-          </div>
+        </div>
         <div class="mt-5">
             <h5>All Projects <small text-muted>(0 results)</h5>
         </div>
@@ -97,7 +105,7 @@
             </div>
         </div>
     </div>
-    
+
     <footer class=" mx-5 p-2 d-flex justify-content-end bg-light">
         <p>Project Explorer 2020 &copy; - <b>Edconnect</b></p>
     </footer>
