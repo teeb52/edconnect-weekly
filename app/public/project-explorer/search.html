@@ -37,32 +37,29 @@
 
     <div class="jumbotron bg-white mx-4 my-4 pb-0 pt-2">
         <h3 class="form-text">Project 1</h3>
-        <form name="searchTerm">
-            <div class="row bg-light ml-0 p-3 align-items-center">
-                <div class="form-group col-7 my-1">
-                    <label class="sr-only form-label" for="formSearchBar">Search bar</label>
-                    <input type="search" class="form-control form-control-lg" id="formSearchBar"
-                        name="searchBar" placeholder="Search project names, authors, abstracts, tags">
+        <main class="container mt-3"> 
+            <h4>Project Gallery</h4>
+            <div class="bg-light p-3">
+              <form> 
+                <div class="form-row ">
+                  <div class=" form-group col-8">
+                    <input type="text" name='searchTerm' class="form-control form-control-lg " placeholder="Search project name, authors, abstract, tags">
+                  </div>
+                  <div class="form-group " >
+                    <label class="btn btn-light"> Search By</label>
+                  </div>
+                  <div class="form-group">
+                      <select name="searchType">
+                        <option value="Name">Name</option>
+                        <option value="Abstract">Abstract</option>
+                        <option value="Authors">Authors</option>
+                        <option value="Tags">Tags</option>
+                      </select>
+                      <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+                  </div>
                 </div>
-                <div class="form-group col-3 my-1">
-                    <label class="sr-only form-label" for="formSearchBy">Search by</label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text">Search by</div>
-                        </div>
-                        <select type="text" class="form-control form-control-lg" id="formSearchBy" name="searchBy">
-                            <option selected>Name</option>
-                            <option>Author</option>
-                            <option>Abstract</option>
-                            <option>Tag</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-group col-auto my-1">
-                    <button type="submit" class=" btn btn-lg btn-primary" name="searchButton">Submit</button>
-                </div>
+              </form>
             </div>
-        </form>
         <div class="mt-5">
             <h5>All Projects <small text-muted>(0 results)</h5>
         </div>
